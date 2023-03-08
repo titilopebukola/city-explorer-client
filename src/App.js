@@ -27,6 +27,7 @@ function App() {
       setMapUrl(
         `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_CITY_KEY}&center=${lat},${lon}&zoom=18`
       );
+      setShowError(false);
     } catch (error) {
       console.log(error);
       setLocation({});
